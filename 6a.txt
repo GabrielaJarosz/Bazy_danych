@@ -1,0 +1,36 @@
+1.
+
+id_produktu -> nazwa_produktu, cena_produktu, VAT 
+ 
+nazwa_produktu -> VAT, cena_produktu, id_produktu
+
+id_klienta -> nazwa_klienta
+
+suma_brutto -> suma_netto, VAT
+
+suma_netto -> cena_produktu, ilość
+
+2.
+
+KLUCZE KANDYDUJĄCE:
+
+id_produktu
+nazwa_klienta + data_zamowienia
+
+
+3.
+
+id_pomieszczenia -> numer_pomieszczenia, powierzchnia, liczba_okien, liczba_drzwi
+
+id_budynku -> ulica, miasto, kod_pocztowy
+
+miasto -> kod_pocztowy
+
+numer_pomieszczenia -> powierchnia, liczba_okien, liczba_drzwi
+
+KLUCZE KANDYDUJĄCE:
+
+id_budynku
+id_pomieszczenia
+numer_pomieszczenia
+
